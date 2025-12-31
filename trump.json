@@ -1,0 +1,10 @@
+{
+    "symbol": "TRUMPUSDT",
+    "channel": -1002386214546,
+    "timeFrame": 1100,
+    "apiKey": "AzqCm2MsAkg1vtDIFD",
+    "apiSecret": "W03jOtIVRoLx354WmWIcfsT16POzgtY6LaZu",
+    "positionSize": 2,
+    "numOrders":  2,
+    "tp": 1.002
+}

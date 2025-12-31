@@ -1,0 +1,10 @@
+{
+    "symbol": "JUPUSDT",
+    "channel": -1002386214546,
+    "timeFrame": 2000,
+    "apiKey": "AzqCm2MsAkg1vtDIFD",
+    "apiSecret": "W03jOtIVRoLx354WmWIcfsT16POzgtY6LaZu",
+    "positionSize": 300,
+    "numOrders":  3,
+    "tp": 1.002
+}

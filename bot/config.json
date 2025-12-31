@@ -1,0 +1,11 @@
+{
+    "symbol": "XRPUSDT",
+    "channel": -1002386214546,
+    "timeFrame": 1000,
+    "apiKey": "2R9S4Qms26VU4VqQQt",
+    "apiSecret": "EUVfxjed43yI3NkJSDUQczaMiKYZVtcGS9hU",
+    "positionSize": 40,
+    "numOrders": 2,
+    "tp": 1.002,
+    "side":  "long"
+}

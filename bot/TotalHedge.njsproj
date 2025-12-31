@@ -1,0 +1,106 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>TotalHedge</Name>
+    <RootNamespace>TotalHedge</RootNamespace>
+    <ScriptArguments>sui.json</ScriptArguments>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6f9100b8-0f6b-4c4d-b1ac-feee4a863af3</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>MakerOne.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>False</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="BybitConfig.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="CSVWriterLiquidation.js" />
+    <Content Include="CSVWriterTrade.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="DrawDownCalculator.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="EasyServer.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="mon.js" />
+    <Content Include="monitor_BTC.js" />
+    <Content Include="BybitClient.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="config.json" />
+    <Content Include="FastExecutionStream.js" />
+    <Content Include="Liquidation.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Logger.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Order.js" />
+    <Content Include="Orderbook.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="PnLReport.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Position.js" />
+    <Content Include="PosWatch.js" />
+    <Content Include="PriceChangeMonitor.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="PublicTrade.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="README.md" />
+    <Content Include="RepairBot.js" />
+    <Content Include="TelegramChannelReader.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="TelegramConnector.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="TestBybit.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Ticker.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Trader.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="MakerOne.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="volumePlot.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="volumeStats.js" />
+    <Content Include="Wallet.js" />
+    <Content Include="WalletWatch.js">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+</Project>

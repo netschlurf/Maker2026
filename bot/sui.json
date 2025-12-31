@@ -1,0 +1,13 @@
+{
+    "symbol": "SUIUSDT",
+    "channel": -1002386214546,
+    "timeFrame": 200,
+    "apiKey": "AzqCm2MsAkg1vtDIFD",
+    "apiSecret": "W03jOtIVRoLx354WmWIcfsT16POzgtY6LaZu",
+    "positionSize": 10,
+    "numOrders": 1,
+    "tp": 1.2,
+    "sl": 1.99,
+    "side": "long",
+    "aggressiveness": 0
+}

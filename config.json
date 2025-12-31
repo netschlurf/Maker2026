@@ -1,0 +1,10 @@
+{
+    "symbol": "SOLUSDT",
+    "channel": -1002386214546,
+	"timeFrame": 1000,
+    "outputDir": "./data",
+    "apiKey": "AzqCm2MsAkg1vtDIFD",
+    "apiSecret": "W03jOtIVRoLx354WmWIcfsT16POzgtY6LaZu",
+    "positionSize": 0.00,
+    "numOrders":  0
+}
