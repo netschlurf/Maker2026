@@ -409,16 +409,27 @@ async function ProcessPeriodicLong(bids, asks)
         }
 
         if (!closeOrder) {
-            await g_exchange.PlaceLimitOrder(g_cfg.symbol, "Sell", g_orderSize, tp, g_PositionIndex);
-            Logger.log("Set TP: " + tp);
+            await g_exchange.PlaceLimitOrder(g_cfg.symbol, "Sell", Number(position.size), tp, g_PositionIndex);
+            Logger.log("Set TP: " + tp + " size: " + position.size);
         }
         else {
-            await g_exchange.AmendLimitOrder(closeOrder.orderId, g_cfg.symbol, tp, null, null);
+            await g_exchange.AmendLimitOrder(closeOrder.orderId, g_cfg.symbol, tp, Number(position.size), null);
         }
 
     }
-    else
+    else {
         g_IsTrailing = false;
+        // Wenn keine Position mehr offen ist, lösche alle offenen Sell- und Buy-Orders
+        const allorders = await g_exchange.GetOpenOrders(g_cfg.symbol);
+        if (allorders && allorders.list && allorders.list.length > 0) {
+            for (const order of allorders.list) {
+                if (order.side === "Sell" || order.side === "Buy") {
+                    await g_exchange.CancelLimitOrder(order.orderId, g_cfg.symbol);
+                    Logger.log(`Cancelled leftover ${order.side} order after position close: ${order.orderId}`);
+                }
+            }
+        }
+    }
     if (Number(position.size) > 0) {
         if (g_LastTicker.lastPrice > breakEvenSave) {
             await g_exchange.SetStopLoss(g_cfg.symbol, trailingStop, g_PositionIndex);
