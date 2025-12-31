@@ -419,13 +419,13 @@ async function ProcessPeriodicLong(bids, asks)
     }
     else {
         g_IsTrailing = false;
-        // Wenn keine Position mehr offen ist, lösche alle offenen Sell- und Buy-Orders
+        // Wenn keine Position mehr offen ist, lösche NUR offene Sell-Orders (TP/SL), aber keine Buy-Orders
         const allorders = await g_exchange.GetOpenOrders(g_cfg.symbol);
         if (allorders && allorders.list && allorders.list.length > 0) {
             for (const order of allorders.list) {
-                if (order.side === "Sell" || order.side === "Buy") {
+                if (order.side === "Sell") {
                     await g_exchange.CancelLimitOrder(order.orderId, g_cfg.symbol);
-                    Logger.log(`Cancelled leftover ${order.side} order after position close: ${order.orderId}`);
+                    Logger.log(`Cancelled leftover Sell order after position close: ${order.orderId}`);
                 }
             }
         }

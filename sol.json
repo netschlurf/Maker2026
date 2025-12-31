@@ -1,7 +1,7 @@
 {
     "symbol": "SOLUSDT",
     "channel": -1002386214546,
-    "timeFrame": 1000,
+    "timeFrame": 500,
     "apiKey": "4ycFv0Uvcu2iBGZrL7",
     "apiSecret": "28QV0aexZasmN3DplmAWxE9IygaLabci6lZn",
     "positionSize": 1.0,
