@@ -4,7 +4,7 @@
     "timeFrame": 500,
     "apiKey": "4ycFv0Uvcu2iBGZrL7",
     "apiSecret": "28QV0aexZasmN3DplmAWxE9IygaLabci6lZn",
-    "positionSize": 1.0,
+    "positionSize": 2.0,
     "numOrders": 1,
     "tp": 1.2,
     "sl": 0.06,
