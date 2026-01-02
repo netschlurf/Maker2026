@@ -43,6 +43,17 @@ module.exports = {
       env: {
         NODE_ENV: "production"
       }
-    }    
+    },
+    {
+      name: "maker-suishort",
+      script: "bot/MakerOne.js",
+      args: "sui.json",
+      interpreter: "node",
+      autorestart: true,
+      watch: false,
+      env: {
+        NODE_ENV: "production"
+      }
+    }  
   ]
 };
