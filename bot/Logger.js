@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 class Logger {
-    // Optionale Variable für die Log-Datei, die standardmäßig auf "log.txt" gesetzt ist.
+    // Optionale Variable fï¿½r die Log-Datei, die standardmï¿½ï¿½ig auf "log.txt" gesetzt ist.
     static logFile = 'log.txt';
 
     // Die Methode loggt Nachrichten
@@ -12,12 +12,12 @@ class Logger {
         const formattedArgs = args.map(arg => {
             if (typeof arg === 'object' && arg !== null) {
                 try {
-                    return JSON.stringify(arg, null, 2); // Formatieren von Objekten mit Einrückung
+                    return JSON.stringify(arg, null, 2); // Formatieren von Objekten mit Einrï¿½ckung
                 } catch (e) {
-                    return '[Objekt konnte nicht serialisiert werden]'; // Fehlerbehandlung, falls JSON.stringify fehlschlägt
+                    return '[Objekt konnte nicht serialisiert werden]'; // Fehlerbehandlung, falls JSON.stringify fehlschlï¿½gt
                 }
             }
-            return arg; // Wenn es kein Objekt ist, einfach zurückgeben
+            return arg; // Wenn es kein Objekt ist, einfach zurï¿½ckgeben
         });
 
         // Die formatierte Nachricht, die alle Argumente umfasst
@@ -26,12 +26,7 @@ class Logger {
         // Log in die Konsole schreiben
         console.log(formattedMessage);
 
-        // Log in die Datei schreiben
-        fs.appendFile(Logger.logFile, formattedMessage + '\n', (err) => {
-            if (err) {
-                console.error("Fehler beim Schreiben in die Logdatei:", err);
-            }
-        });
+        // Datei-Logging deaktiviert (nur Konsole)
     }
 
     static error(...args) {
@@ -41,26 +36,19 @@ class Logger {
         const formattedArgs = args.map(arg => {
             if (typeof arg === 'object' && arg !== null) {
                 try {
-                    return JSON.stringify(arg, null, 2); // Formatieren von Objekten mit Einrückung
+                    return JSON.stringify(arg, null, 2); // Formatieren von Objekten mit Einrï¿½ckung
                 } catch (e) {
-                    return '[Objekt konnte nicht serialisiert werden]'; // Fehlerbehandlung, falls JSON.stringify fehlschlägt
+                    return '[Objekt konnte nicht serialisiert werden]'; // Fehlerbehandlung, falls JSON.stringify fehlschlï¿½gt
                 }
             }
-            return arg; // Wenn es kein Objekt ist, einfach zurückgeben
+            return arg; // Wenn es kein Objekt ist, einfach zurï¿½ckgeben
         });
  
         // Die formatierte Nachricht, die alle Argumente umfasst
         const formattedMessage = `[${timestamp}] "ERROR: " ${formattedArgs.join(' ')}`;
 
-        // Log in die Konsole schreiben
-        console.log(formattedMessage);
-
-        // Log in die Datei schreiben
-        fs.appendFile(Logger.logFile, formattedMessage + '\n', (err) => {
-            if (err) {
-                console.error("Fehler beim Schreiben in die Logdatei:", err);
-            }
-        });
+        // Nur Konsole (Error Stream)
+        console.error(formattedMessage);
     }
 }
 
