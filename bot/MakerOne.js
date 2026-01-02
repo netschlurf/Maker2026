@@ -474,7 +474,7 @@ async function ProcessPeriodicShort(bids, asks) {
         obPrice = AddPercentage(obPrice, 0.06);
         if (EpsilonCompare(Number(openOrder.price), obPrice, 0.005)) {
             await g_exchange.AmendLimitOrder(openOrder.orderId, g_cfg.symbol, obPrice, null, null);
-            Logger.log("Ammend Order at: " + obPrice);
+            //Logger.log("Ammend Order at: " + obPrice);
         }
     }
 
