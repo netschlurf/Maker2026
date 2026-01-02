@@ -12754,3 +12754,4 @@
   "sessionAvgPrice": ""
 }
 [2025-12-30T18:54:54.043Z] ✅ API Test completed successfully!
+[2026-01-01T22:15:13.985Z] "ERROR: " Error fetching closed PnL: Your api key has expired.
