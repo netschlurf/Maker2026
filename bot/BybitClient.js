@@ -63,11 +63,29 @@ class BybitClient {
 
             const amendResult = await this.client.amendOrder(amendParams);
             if (amendResult.retCode != 0) {
-                Logger.error(amendResult.retMsg);
+                // Suppress noisy benign message from Bybit when order cannot be modified
+                // e.g., "order not modified" which can happen when price/qty unchanged or
+                // order already filled. Only log other error messages.
+                try {
+                    const msg = amendResult.retMsg ? String(amendResult.retMsg).toLowerCase() : '';
+                    if (!msg.includes('order not modified') && !msg.includes('no need to modify') && !msg.includes('nothing to modify')) {
+                        Logger.error(amendResult.retMsg);
+                    }
+                } catch (e) {
+                    Logger.error(amendResult.retMsg);
+                }
             }
             return amendResult;
         } catch (error) {
-            Logger.error('Error amending limit order:', error);
+            // Filter out benign errors that indicate nothing to change
+            try {
+                const emsg = error && error.message ? String(error.message).toLowerCase() : '';
+                if (!emsg.includes('order not modified') && !emsg.includes('no need to modify') && !emsg.includes('nothing to modify')) {
+                    Logger.error('Error amending limit order:', error);
+                }
+            } catch (e) {
+                Logger.error('Error amending limit order:', error);
+            }
             throw error;
         }
     }
