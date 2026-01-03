@@ -1,10 +1,13 @@
 {
     "symbol": "MNTUSDT",
     "channel": -1002386214546,
-    "timeFrame": 2000,
-    "apiKey": "AzqCm2MsAkg1vtDIFD",
-    "apiSecret": "W03jOtIVRoLx354WmWIcfsT16POzgtY6LaZu",
-    "positionSize": 600,
-    "numOrders":  3,
-    "tp": 1.002
+    "timeFrame": 100,
+    "apiKey": "4ycFv0Uvcu2iBGZrL7",
+    "apiSecret": "28QV0aexZasmN3DplmAWxE9IygaLabci6lZn",
+    "positionSize": 30.0,
+    "numOrders": 1,
+    "tp": 0.7,
+    "sl": 0.06,
+    "side": "short",
+    "aggressiveness": 1
 }

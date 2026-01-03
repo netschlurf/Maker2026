@@ -54,6 +54,17 @@ module.exports = {
       env: {
         NODE_ENV: "production"
       }
+    },
+    {
+      name: "maker-mntshort",
+      script: "bot/MakerOne.js",
+      args: "mnt.json",
+      interpreter: "node",
+      autorestart: true,
+      watch: false,
+      env: {
+        NODE_ENV: "production"
+      }
     }  
   ]
 };

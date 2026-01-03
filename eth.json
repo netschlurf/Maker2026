@@ -1,13 +1,13 @@
 {
     "symbol": "ETHUSDT",
     "channel": -1002386214546,
-    "timeFrame": 500,
+    "timeFrame": 200,
     "apiKey": "4ycFv0Uvcu2iBGZrL7",
     "apiSecret": "28QV0aexZasmN3DplmAWxE9IygaLabci6lZn",
-    "positionSize": 0.08,
+    "positionSize": 0.06,
     "numOrders": 1,
     "tp": 0.4,
     "sl": 0.06,
     "side": "long",
-    "aggressiveness": 5
+    "aggressiveness": 2
 }

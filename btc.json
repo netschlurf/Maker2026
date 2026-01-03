@@ -1,7 +1,7 @@
 {
     "symbol": "BTCUSDT",
     "channel": -1002386214546,
-    "timeFrame": 1000,
+    "timeFrame": 200,
     "apiKey": "4ycFv0Uvcu2iBGZrL7",
     "apiSecret": "28QV0aexZasmN3DplmAWxE9IygaLabci6lZn",
     "positionSize": 0.002,
@@ -9,5 +9,5 @@
     "tp": 0.5,
     "sl": 0.06,
     "side": "long",
-    "aggressiveness": 1
+    "aggressiveness": 2
 }
