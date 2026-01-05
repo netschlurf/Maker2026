@@ -68,14 +68,15 @@ module.exports = {
     },
     {
       name: "ngiworks-web",
-      script: "bot/ngiworks-simple.js",
+      script: "bot/ngiworks-production.js",
       interpreter: "node",
       autorestart: true,
       watch: false,
       instances: 1,
       env: {
         NODE_ENV: "production",
-        PORT: "80"
+        HTTP_PORT: "80",
+        HTTPS_PORT: "443"
       },
       error_file: "./logs/ngiworks-error.log",
       out_file: "./logs/ngiworks-out.log",
