@@ -292,17 +292,8 @@ class ProductionNgiworksServer {
             }
         });
 
-        // 404 handler
-        this.app.use('*', (req, res) => {
-            console.warn(`❌ 404 - Route nicht gefunden: ${req.originalUrl}`);
-            res.status(404).json({
-                error: 'Not Found',
-                message: 'Die angeforderte Ressource wurde nicht gefunden',
-                path: req.originalUrl,
-                server: 'ngiworks-production',
-                timestamp: new Date().toISOString()
-            });
-        });
+        // Remove problematic 404 handler that causes path-to-regexp error
+        // Express static middleware will handle file serving automatically
 
         // Error handler
         this.app.use((error, req, res, next) => {
