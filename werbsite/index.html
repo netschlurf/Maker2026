@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotalHedge - Professioneller Trading Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <div class="logo-cube">
+                            <div class="cube-face front">T</div>
+                            <div class="cube-face back">H</div>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>TotalHedge</h1>
+                        <span>by <strong>ngiworks</strong></span>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features" data-translate="nav.features">Features</a></li>
+                <li><a href="#performance" data-translate="nav.performance">Performance</a></li>
+                <li><a href="#pricing" data-translate="nav.pricing">Pricing</a></li>
+                <li><a href="#contact" data-translate="nav.contact">Kontakt</a></li>
+                <li class="language-switcher">
+                    <button id="lang-de" class="lang-btn active">DE</button>
+                    <button id="lang-en" class="lang-btn">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-translate="hero.title">Professioneller Market Maker Bot<br>für Kryptowährungen</h1>
+                <p class="hero-subtitle" data-translate="hero.subtitle">TotalHedge ist ein fortschrittlicher Market Maker Bot, der kontinuierlich Liquidität bereitstellt und durch Bid-Ask-Spreads profitiert. Optimiert für Bybit mit 24/7 automatisiertem Trading.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary" data-translate="hero.demo">Live Demo ansehen</a>
+                    <a href="#features" class="btn btn-secondary" data-translate="hero.learn">Mehr erfahren</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label" data-translate="hero.stat1">Liquiditätsbereitstellung</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0.1s</span>
+                        <span class="stat-label" data-translate="hero.stat2">Reaktionszeit</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label" data-translate="hero.stat3">Market Making</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="partner-section">
+        <div class="container">
+            <div class="partner-content">
+                <div class="partner-badge">
+                    <span data-translate="partner.official">Offizieller Partner</span>
+                </div>
+                <div class="partner-logo-container">
+                    <div class="partner-logo bybit-logo">
+                        <h2>Bybit</h2>
+                        <span>World's Leading Crypto Exchange</span>
+                    </div>
+                    <div class="partnership-icon">🤝</div>
+                    <div class="partner-logo ngiworks-logo">
+                        <h2>ngiworks</h2>
+                        <span>Algorithmic Trading Solutions</span>
+                    </div>
+                </div>
+                <p class="partner-description" data-translate="partner.description">
+                    TotalHedge ist exklusiv für die Bybit-Exchange optimiert. Als offizieller Partner bieten wir direkten API-Zugang, 
+                    niedrigste Latenz und Premium-Support für institutionelle Trading-Lösungen.
+                </p>
+                <div class="partner-stats">
+                    <div class="partner-stat">
+                        <span class="stat-number">15M+</span>
+                        <span class="stat-label" data-translate="partner.users">Bybit Nutzer</span>
+                    </div>
+                    <div class="partner-stat">
+                        <span class="stat-number">$2B+</span>
+                        <span class="stat-label" data-translate="partner.volume24h">24h Volumen</span>
+                    </div>
+                    <div class="partner-stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label" data-translate="partner.uptime">Exchange Uptime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-translate="features.title">Warum TotalHedge Market Maker?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3 data-translate="features.speed.title">Ultraschnelle Ausführung</h3>
+                    <p data-translate="features.speed.desc">FastExecutionStream für millisekunden-genaue Order-Platzierung und -Verwaltung. Keine verpassten Opportunities.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3 data-translate="features.market.title">Intelligentes Market Making</h3>
+                    <p data-translate="features.market.desc">Fortschrittliche Orderbook-Analyse mit dynamischer Preisfindung für optimale Entry- und Exit-Points.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 data-translate="features.risk.title">Risikomanagement</h3>
+                    <p data-translate="features.risk.desc">Integrierte Stop-Loss-, Take-Profit- und Trailing-Stop-Mechanismen für maximalen Schutz Ihres Kapitals.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-translate="features.monitor.title">Real-Time Monitoring</h3>
+                    <p data-translate="features.monitor.desc">Live-Überwachung von Positionen, Liquidationen, und Marktbewegungen mit Telegram-Benachrichtigungen.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔧</div>
+                    <h3 data-translate="features.config.title">Vollständig Konfigurierbar</h3>
+                    <p data-translate="features.config.desc">Anpassbare Strategien für Long/Short Positionen, variable Positionsgrößen und flexible Timeframes.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <h3 data-translate="features.analytics.title">Performance Analytics</h3>
+                    <p data-translate="features.analytics.desc">Detaillierte PnL-Reports, Drawdown-Analyse und Performance-Tracking für kontinuierliche Optimierung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h2 data-translate="tech.title">Fortschrittliche Technologie</h2>
+                    <p data-translate="tech.subtitle">TotalHedge nutzt modernste Algorithmen und Echtzeit-Datenstreams für präzises Trading:</p>
+                    <ul>
+                        <li data-translate="tech.websocket"><strong>WebSocket-Streams:</strong> Echtzeit Orderbook und Trade-Daten</li>
+                        <li data-translate="tech.bybit"><strong>Bybit API Integration:</strong> Exklusiver Partnerzugang zur weltweit führenden Krypto-Börse</li>
+                        <li data-translate="tech.liquidation"><strong>Liquidation Monitoring:</strong> Identifikation von Markt-Ineffizienzen</li>
+                        <li data-translate="tech.sizing"><strong>Dynamic Position Sizing:</strong> Automatische Anpassung an Marktvolatilität</li>
+                        <li data-translate="tech.multiasset"><strong>Multi-Asset Support:</strong> BTC, ETH, SOL, XRP und viele weitere</li>
+                        <li data-translate="tech.partnership"><strong>Bybit Partnership:</strong> Premium API-Zugang und institutionelle Features</li>
+                    </ul>
+                </div>
+                <div class="tech-visual">
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <span>MakerOne.js</span>
+                        </div>
+                        <pre><code>// Real-time Orderbook Processing
+function OnOrderbook(data) {
+    if (Date.now() - lastExecution >= timeFrame) {
+        ProcessPeriodic(data.bids, data.asks);
+        OptimizePositions();
+    }
+}
+
+// Dynamic Risk Management
+async function UpdateStopLoss(position) {
+    const trailingStop = calculateTrailing(position);
+    await exchange.AmendLimitOrder(
+        orderId, symbol, null, null, trailingStop
+    );
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Strategy Section -->
+    <section class="trading-strategy">
+        <div class="container">
+            <h2 class="section-title" data-translate="strategy.title">Die TotalHedge Trading-Strategie</h2>
+            <p class="strategy-intro" data-translate="strategy.intro">Der Kern unseres Systems basiert auf fortschrittlichen Market-Making-Algorithmen, die Markt-Ineffizienzen identifizieren und ausnutzen.</p>
+            
+            <div class="strategy-grid">
+                <div class="strategy-main">
+                    <div class="strategy-card primary">
+                        <div class="strategy-icon">📈</div>
+                        <h3 data-translate="strategy.market.title">Liquidity Provision Strategy</h3>
+                        <p data-translate="strategy.market.desc">TotalHedge positioniert sich als Market Maker, indem er kontinuierlich Bid- und Ask-Orders im Orderbook platziert. Durch das Ausnutzen der Bid-Ask-Spreads generiert der Bot konsistente Profits.</p>
+                        <div class="strategy-details">
+                            <h4 data-translate="strategy.market.how">Funktionsweise:</h4>
+                            <ul>
+                                <li data-translate="strategy.market.step1">Echtzeit-Analyse des Orderbooks mit WebSocket-Streams</li>
+                                <li data-translate="strategy.market.step2">Dynamische Preisfindung basierend auf Markttiefe</li>
+                                <li data-translate="strategy.market.step3">Verteilung von Limit-Orders über mehrere Preisniveaus</li>
+                                <li data-translate="strategy.market.step4">Sofortige Neupositionierung bei Marktbewegungen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="strategy-secondary">
+                    <div class="strategy-card">
+                        <div class="strategy-icon">⚡</div>
+                        <h3 data-translate="strategy.liquidation.title">Liquidation Hunting</h3>
+                        <p data-translate="strategy.liquidation.desc">Der Bot überwacht Liquidations-Events und nutzt die daraus resultierenden Preisbewegungen für profitable Trades.</p>
+                    </div>
+                    
+                    <div class="strategy-card">
+                        <div class="strategy-icon">🛡️</div>
+                        <h3 data-translate="strategy.risk.title">Dynamic Risk Management</h3>
+                        <p data-translate="strategy.risk.desc">Intelligente Stop-Loss- und Take-Profit-Mechanismen passen sich automatisch an Marktvolatilität an.</p>
+                    </div>
+                    
+                    <div class="strategy-card">
+                        <div class="strategy-icon">🔄</div>
+                        <h3 data-translate="strategy.arbitrage.title">Micro-Arbitrage</h3>
+                        <p data-translate="strategy.arbitrage.desc">Ausnutzung kleinster Preisunterschiede zwischen verschiedenen Orderbook-Levels.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="strategy-performance">
+                <h3 data-translate="strategy.performance.title">Strategie-Performance</h3>
+                <div class="performance-metrics">
+                    <div class="metric-card">
+                        <div class="metric-value">0.02-0.08%</div>
+                        <div class="metric-label" data-translate="strategy.performance.spread">Profit pro Trade</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">500-2000</div>
+                        <div class="metric-label" data-translate="strategy.performance.trades">Trades pro Tag</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">< 100ms</div>
+                        <div class="metric-label" data-translate="strategy.performance.latency">Ausführungszeit</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">95%+</div>
+                        <div class="metric-label" data-translate="strategy.performance.winrate">Win-Rate</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="strategy-code-example">
+                <h3 data-translate="strategy.code.title">Kern-Algorithmus</h3>
+                <div class="code-preview">
+                    <div class="code-header">
+                        <span>ProcessPeriodic() - Market Making Logic</span>
+                    </div>
+                    <pre><code>// Orderbook-Analyse und Market Making
+function ProcessPeriodic(bids, asks) {
+    const spreadAnalysis = calculateOptimalSpread(bids, asks);
+    const liquidityGaps = findLiquidityGaps(orderbook);
+    
+    // Dynamische Positionsberechnung
+    const optimalSize = calculatePositionSize(
+        volatility, accountBalance, riskTolerance
+    );
+    
+    // Multi-Level Order Placement
+    for (let level = 0; level < numOrders; level++) {
+        const bidPrice = calculateBidPrice(level, spread);
+        const askPrice = calculateAskPrice(level, spread);
+        
+        await placeLimitOrder('Buy', bidPrice, orderSize);
+        await placeLimitOrder('Sell', askPrice, orderSize);
+    }
+    
+    // Risk Management Update
+    updateStopLoss(currentPosition, volatility);
+    monitorLiquidationLevels(marketDepth);
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About ngiworks Section -->
+    <section class="about-company">
+        <div class="container">
+            <div class="company-content">
+                <div class="company-text">
+                    <h2 data-translate="company.title">Von den Experten bei ngiworks</h2>
+                    <p data-translate="company.subtitle">ngiworks ist ein führendes Unternehmen für quantitative Handelsalgorithmen und Fintech-Lösungen. Mit jahrelanger Erfahrung in der Entwicklung von Trading-Software für institutionelle Kunden.</p>
+                    <div class="company-stats">
+                        <div class="company-stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label" data-translate="company.years">Jahre Erfahrung</span>
+                        </div>
+                        <div class="company-stat">
+                            <span class="stat-number">500M+</span>
+                            <span class="stat-label" data-translate="company.volume">Handelsvolumen</span>
+                        </div>
+                        <div class="company-stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label" data-translate="company.uptime">Uptime</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-visual">
+                    <div class="company-logo">
+                        <h1>ngiworks</h1>
+                        <p data-translate="company.tagline">Algorithmic Trading Solutions</p>
+                    </div>
+                    <div class="company-features">
+                        <div class="company-feature">
+                            <div class="feature-icon">🏢</div>
+                            <h4 data-translate="company.enterprise">Enterprise-Grade</h4>
+                            <p data-translate="company.enterprise.desc">Institutional-level Sicherheit und Zuverlässigkeit</p>
+                        </div>
+                        <div class="company-feature">
+                            <div class="feature-icon">🔍</div>
+                            <h4 data-translate="company.research">R&D Focus</h4>
+                            <p data-translate="company.research.desc">Ständige Innovation in Trading-Algorithmen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance" class="performance">
+        <div class="container">
+            <h2 class="section-title" data-translate="performance.title">Beeindruckende Performance</h2>
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <div class="performance-icon">📈</div>
+                    <h3 data-translate="performance.profits.title">Konsistente Gewinne</h3>
+                    <p data-translate="performance.profits.desc">Automatisierte Profit-Optimierung durch intelligente Market-Making-Strategien</p>
+                </div>
+                <div class="performance-card">
+                    <div class="performance-icon">⏱️</div>
+                    <h3 data-translate="performance.availability.title">24/7 Verfügbarkeit</h3>
+                    <p data-translate="performance.availability.desc">Niemals eine Gelegenheit verpassen - der Bot arbeitet rund um die Uhr</p>
+                </div>
+                <div class="performance-card">
+                    <div class="performance-icon">🎯</div>
+                    <h3 data-translate="performance.precision.title">Präzise Ausführung</h3>
+                    <p data-translate="performance.precision.desc">Millisekunden-genaue Order-Platzierung für optimale Markt-Entry-Points</p>
+                </div>
+            </div>
+            
+            <div class="demo-section">
+                <h3 data-translate="performance.dashboard.title">Live Performance Dashboard</h3>
+                <div class="dashboard-preview">
+                    <div class="dashboard-card">
+                        <h4 data-translate="performance.dashboard.session">Heute (24h)</h4>
+                        <div class="metric">
+                            <span class="metric-value positive" id="live-pnl">+0.00%</span>
+                            <span class="metric-label" data-translate="performance.dashboard.pnl">PnL heute</span>
+                        </div>
+                        <div class="live-indicator">
+                            <span class="indicator-dot"></span>
+                            <span data-translate="performance.dashboard.live">Live</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-card">
+                        <h4 data-translate="performance.dashboard.trades">Trades heute</h4>
+                        <div class="metric">
+                            <span class="metric-value" id="live-trades">0</span>
+                            <span class="metric-label" id="live-symbol">LOADING...</span>
+                        </div>
+                        <div class="metric-small">
+                            <span data-translate="performance.dashboard.winrate">Win-Rate:</span>
+                            <span id="live-winrate">0%</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-card">
+                        <h4 data-translate="performance.dashboard.risk">Bot Status</h4>
+                        <div class="metric">
+                            <span class="metric-value safe" id="bot-status" data-translate="performance.dashboard.active">AKTIV</span>
+                            <span class="metric-label" id="last-update">Letztes Update: --:--</span>
+                        </div>
+                        <div class="metric-small">
+                            <span data-translate="performance.dashboard.volume">Volumen:</span>
+                            <span id="live-volume">-- USDT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="live-trades-section">
+                    <h4 data-translate="performance.recent.title">Letzte Trades</h4>
+                    <div class="recent-trades" id="recent-trades">
+                        <div class="loading-placeholder">Lade Live-Daten...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title" data-translate="pricing.title">Investieren Sie in Ihre Zukunft</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 data-translate="pricing.starter.title">Starter</h3>
+                    <div class="price">
+                        <span class="currency">€</span>
+                        <span class="amount">299</span>
+                        <span class="period" data-translate="pricing.month">/Monat</span>
+                    </div>
+                    <ul class="features-list">
+                        <li data-translate="pricing.starter.feature1">1 Trading Paar</li>
+                        <li data-translate="pricing.starter.feature2">Basis Risk Management</li>
+                        <li data-translate="pricing.starter.feature3">Telegram Benachrichtigungen</li>
+                        <li data-translate="pricing.starter.feature4">Email Support</li>
+                    </ul>
+                    <button class="btn btn-outline" data-translate="pricing.select">Auswählen</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="featured-badge" data-translate="pricing.popular">Beliebt</div>
+                    <h3 data-translate="pricing.pro.title">Professional</h3>
+                    <div class="price">
+                        <span class="currency">€</span>
+                        <span class="amount">799</span>
+                        <span class="period" data-translate="pricing.month">/Monat</span>
+                    </div>
+                    <ul class="features-list">
+                        <li data-translate="pricing.pro.feature1">Unbegrenzte Trading Paare</li>
+                        <li data-translate="pricing.pro.feature2">Erweiterte Strategien</li>
+                        <li data-translate="pricing.pro.feature3">Live Dashboard</li>
+                        <li data-translate="pricing.pro.feature4">PnL Analytics</li>
+                        <li data-translate="pricing.pro.feature5">Priority Support</li>
+                        <li data-translate="pricing.pro.feature6">Custom Konfiguration</li>
+                    </ul>
+                    <button class="btn btn-primary" data-translate="pricing.select">Auswählen</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3 data-translate="pricing.enterprise.title">Enterprise</h3>
+                    <div class="price">
+                        <span class="currency">€</span>
+                        <span class="amount">1999</span>
+                        <span class="period" data-translate="pricing.month">/Monat</span>
+                    </div>
+                    <ul class="features-list">
+                        <li data-translate="pricing.enterprise.feature1">Multi-Exchange Support</li>
+                        <li data-translate="pricing.enterprise.feature2">White-Label Lösung</li>
+                        <li data-translate="pricing.enterprise.feature3">Dedicated Server</li>
+                        <li data-translate="pricing.enterprise.feature4">24/7 Phone Support</li>
+                        <li data-translate="pricing.enterprise.feature5">Custom Development</li>
+                        <li data-translate="pricing.enterprise.feature6">API Access</li>
+                    </ul>
+                    <button class="btn btn-outline" data-translate="pricing.contact">Kontakt</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact.title">Bereit zu starten?</h2>
+            <p class="contact-subtitle" data-translate="contact.subtitle">Kontaktieren Sie uns für eine persönliche Demo und maßgeschneiderte Lösung</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>totalhedge@ngiworks.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <div>
+                        <h4>Telegram</h4>
+                        <p>@TotalHedgeSupport</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div>
+                        <h4>Discord</h4>
+                        <p data-translate="contact.discord">TotalHedge Community</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section">
+                <h3 data-translate="contact.trial.title">Kostenlose 7-Tage Testversion</h3>
+                <p data-translate="contact.trial.desc">Testen Sie TotalHedge risikofrei mit unserem Demo-Account</p>
+                <button class="btn btn-primary btn-large" data-translate="contact.trial.button">Jetzt kostenlos testen</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ngiworks</h4>
+                    <p data-translate="footer.description">Führender Anbieter von algorithmischen Trading-Lösungen. TotalHedge ist unser Premium Trading-Bot für Kryptowährungen.</p>
+                    <div class="company-info">
+                        <p><strong>TotalHedge</strong> - Powered by ngiworks</p>
+                    </div>                    <div class="partner-badge-footer">
+                        <span data-translate="footer.partner">Offizieller Bybit Partner</span>
+                    </div>                </div>
+                <div class="footer-section">
+                    <h4>Features</h4>
+                    <ul>
+                        <li data-translate="footer.market">Market Making</li>
+                        <li data-translate="footer.risk">Risk Management</li>
+                        <li data-translate="footer.analytics">Real-Time Analytics</li>
+                        <li data-translate="footer.multiasset">Multi-Asset Support</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li data-translate="footer.docs">Dokumentation</li>
+                        <li data-translate="footer.api">API Reference</li>
+                        <li data-translate="footer.community">Community Forum</li>
+                        <li data-translate="footer.chat">Live Chat</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li data-translate="footer.privacy">Datenschutz</li>
+                        <li data-translate="footer.terms">AGB</li>
+                        <li data-translate="footer.imprint">Impressum</li>
+                        <li>Disclaimer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2026 ngiworks. TotalHedge ist ein Produkt von ngiworks.</p>
+                <p class="disclaimer" data-translate="footer.disclaimer">Trading birgt Risiken. Vergangene Performance ist keine Garantie für zukünftige Ergebnisse.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
+</body>
+</html>

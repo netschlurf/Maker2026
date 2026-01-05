@@ -65,6 +65,23 @@ module.exports = {
       env: {
         NODE_ENV: "production"
       }
+    },
+    {
+      name: "ngiworks-web",
+      script: "bot/ngiworks-simple.js",
+      interpreter: "node",
+      autorestart: true,
+      watch: false,
+      instances: 1,
+      env: {
+        NODE_ENV: "production",
+        PORT: "80"
+      },
+      error_file: "./logs/ngiworks-error.log",
+      out_file: "./logs/ngiworks-out.log",
+      log_file: "./logs/ngiworks-combined.log",
+      time: true,
+      max_memory_restart: "200M"
     }  
   ]
 };

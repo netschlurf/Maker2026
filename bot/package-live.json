@@ -1,0 +1,18 @@
+{
+  "name": "totalhedge-live-server",
+  "version": "1.0.0",
+  "description": "Live PnL Server für TotalHedge Website",
+  "main": "LivePnLServer.js",
+  "scripts": {
+    "start": "node LivePnLServer.js",
+    "dev": "nodemon LivePnLServer.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
