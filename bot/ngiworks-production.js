@@ -10,7 +10,7 @@ const path = require('path');
 class ProductionNgiworksServer {
     constructor() {
         this.app = express();
-        this.httpPort = process.env.HTTP_PORT || 80;
+        this.httpPort = 80;
         this.httpsPort = process.env.HTTPS_PORT || 443;
         this.websiteDir = this.findWebsiteDirectory();
         this.startupTime = new Date();
