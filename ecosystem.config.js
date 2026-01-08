@@ -67,7 +67,7 @@ module.exports = {
       }
     },
     {
-      name: "maker-bnbshort",
+      name: "maker-bnb",
       script: "bot/MakerOne.js",
       args: "bnb.json",
       interpreter: "node",
@@ -76,7 +76,18 @@ module.exports = {
       env: {
         NODE_ENV: "production"
       }
-    },    
+    },   
+    {
+      name: "maker-ada",
+      script: "bot/MakerOne.js",
+      args: "ada.json",
+      interpreter: "node",
+      autorestart: true,
+      watch: false,
+      env: {
+        NODE_ENV: "production"
+      }
+    }, 
     {
       name: "ngiworks-web",
       script: "bot/ngiworks-simple.js",
