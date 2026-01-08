@@ -67,6 +67,17 @@ module.exports = {
       }
     },
     {
+      name: "maker-bnbshort",
+      script: "bot/MakerOne.js",
+      args: "bnb.json",
+      interpreter: "node",
+      autorestart: true,
+      watch: false,
+      env: {
+        NODE_ENV: "production"
+      }
+    },    
+    {
       name: "ngiworks-web",
       script: "bot/ngiworks-simple.js",
       interpreter: "node",

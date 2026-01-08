@@ -1,0 +1,13 @@
+{
+    "symbol": "BNBUSDT",
+    "channel": -1002386214546,
+    "timeFrame": 100,
+    "apiKey": "4ycFv0Uvcu2iBGZrL7",
+    "apiSecret": "28QV0aexZasmN3DplmAWxE9IygaLabci6lZn",
+    "positionSize": 0.1,
+    "numOrders": 1,
+    "tp": 0.3,
+    "sl": 0.06,
+    "side": "long",
+    "aggressiveness": 2
+}
